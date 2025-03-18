@@ -5,7 +5,7 @@ reportlab
 pillow
 pytesseract
 requests
-pymupdf  # PyMuPDF
+pymupdf
 transformers
 textwrap3
 google-generativeai
