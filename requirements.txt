@@ -1,0 +1,11 @@
+streamlit
+PyPDF2
+streamlit-option-menu
+reportlab
+pillow
+pytesseract
+requests
+pymupdf  # PyMuPDF
+transformers
+textwrap3
+google-generativeai
