@@ -1,3 +1,22 @@
+
+
+
+import subprocess
+import sys
+
+def install_package(package):
+    try:
+        __import__(package)
+    except ImportError:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+packages = ["PyPDF2", "streamlit-option-menu", "reportlab", "Pillow", "pytesseract", "requests", "fitz", "transformers", "textwrap3", "google-generativeai"]
+
+for package in packages:
+    install_package(package)
+
+
+
 import streamlit as st
 from io import BytesIO
 from PyPDF2 import PdfReader
