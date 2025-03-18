@@ -222,7 +222,7 @@ if 'selected' not in st.session_state:
 with st.sidebar:
     col1, col2, col3 = st.columns([1, 1, 1])
     with col2:
-        st.image("Desktop/logo.png", width=250, use_column_width=True)
+        st.image("logo.png", width=250, use_column_width=True)
     st.markdown("<h1 style='text-align: center; font-size: 150%; font-weight: bold;'> SENSITIVE INFORMATION MASKER</h1>", unsafe_allow_html=True)
     selected = option_menu(
         menu_title="Main Menu",
