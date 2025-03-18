@@ -20,8 +20,12 @@ import textwrap
 import google.generativeai as genai
 
 # Set up Google Generative AI API Key
-os.environ['GOOGLE_API_KEY'] = "YOUR_GOOGLE_API_KEY"
-genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
+import streamlit as st
+import google.generativeai as genai
+
+api_key = st.secrets["GOOGLE_API_KEY"]  # Fetch API key from Streamlit Cloud secrets
+genai.configure(api_key=api_key)
+
 model = genai.GenerativeModel('gemini-1.5-pro-latest')
 
 def extract_output(response):
